@@ -15,6 +15,8 @@ import java.util.ArrayList;
 
 @WebServlet("/servletLibri")
 public class Servlet extends HttpServlet {
+    //Per testare la servlet usare l'URL: 'http://localhost:8080/servletLibri/servletLibri?nomeDB=db_servletLibri&user=userVerifica&password=password1'
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 

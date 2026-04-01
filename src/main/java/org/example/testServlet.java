@@ -1,3 +1,20 @@
+/*
+            CODICE TABELLA XAMPP
+
+            CREATE TABLE libri
+            (
+                id INT PRIMARY KEY AUTO_INCREMENT,
+                titolo VARCHAR(255) NOT NULL,
+                numPagine INT NOT NULL,
+                autore VARCHAR(100) NOT NULL
+            );
+
+            INSERT INTO libri (titolo, numPagine, autore) VALUES
+                    ('1984', 250, 'George Orwell'),
+                    ('La fattoria degli animali', 100, 'George Orwell'),
+                    ('Harry Potter e la pietra filosofale', 300, 'J.K. Rowling');
+        */
+
 package org.example;
 
 import java.io.IOException;
@@ -8,6 +25,8 @@ import java.net.http.HttpResponse;
 
 public class testServlet {
     public static void main(String[] args) {
+        //Codice per testare il funzionamento della servlet
+
         try {
             HttpClient client = HttpClient.newHttpClient();
 
